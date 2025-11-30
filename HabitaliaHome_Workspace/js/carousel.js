@@ -5,8 +5,7 @@
 
 // Estado: índice de la diapositiva que se está mostrando actualmente
 let currentSlideIndex = 0;
-let slides = []; // Almacenará todos los elementos con la clase 'slide'
-
+let slides = []; 
 // Se ejecuta cuando el HTML está completamente cargado
 document.addEventListener('DOMContentLoaded', function() {
     // 1. Carga los elementos del carrusel una vez
