@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos - Habitalia Home</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/productsStyles.css" />
+  </head>
+  <body>
+    <div data-include="./header.html"></div>
+
+    <main class="container">
+      <section class="carousel">
+        <div class="carousel-content">
+          <div class="slide"> 
+            <img 
+              src="../assets/images/ImgProducts/habitacion/habitacion1.png" 
+              alt="habitacion moderna con cama de matrimonio" 
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/images/ImgProducts/habitacion/habitacion2.png" 
+              alt="habitacion para niños con litera" 
+            />
+          </div>
+        </div>
+        <button class="carousel-arrow prev" onclick="moveSlide(-1)">&lt;</button>
+        <button class="carousel-arrow next" onclick="moveSlide(1)">&gt;</button>
+      </section>
+
+      <section class="product-item">
+        <div class="product-image">
+          <img src="../assets/images/ImgProducts/habitacion/CamaDobleCapsulaDeComodidad430$.png" alt="Imagen de Cama doble Capsula" />
+        </div>
+        <div class="product-info">
+          <h2>Cama doble capsula</h2>
+          <p>Cama doble con diseño de cápsula envolvente, estructura robusta y acabado en tonos neutros. Incluye colchón de alta densidad y ropa de cama suave, ideal para un descanso confortable y moderno.
+          </p>
+          <button class="btn-add-to-cart">
+            <img src="../assets/icons/but_icon.png" alt="Icono de carrito" style="width: 20px; height: 20px;">
+            Añadir al carrito
+          </button>
+        </div>
+      </section>
+
+      <section class="product-item product-item-reverse">
+        <div class="product-image">
+          <img src="../assets/images/ImgProducts/habitacion/LiteraAltaComidad300$.png" alt="Imagen de Litera alta comoda de color rosa" />
+        </div>
+        <div class="product-info">
+          <h2>Litera alta comoda de color Rosa</h2>
+          <p>Litera alta con diseño funcional y moderno, estructura metálica resistente en acabado rosa suave. Incluye colchones cómodos y espacio de almacenamiento integrado, ideal para habitaciones infantiles o juveniles.
+          </p>
+          <button class="btn-add-to-cart">
+            <img src="../assets/icons/but_icon.png" alt="Icono de carrito" style="width: 20px; height: 20px;">
+            Añadir al carrito
+          </button>
+        </div>
+      </section>
+
+      <section class="product-item">
+        <div class="product-image">
+          <img src="../assets/images/ImgProducts/habitacion/Uni50$.png" alt="Imagen de un unicornio" />
+        </div>
+        <div class="product-info">
+          <h2>Unicornio Blanco y Rosa</h2>
+          <p>Figura decorativa de unicornio en tonos blanco y rosa, con detalles brillantes y acabado suave. Perfecta para añadir un toque mágico y encantador a cualquier habitación infantil o juvenil.
+          </p>
+          <button class="btn-add-to-cart">
+            <img src="../assets/icons/but_icon.png" alt="Icono de carrito" style="width: 20px; height: 20px;">
+            Añadir al carrito
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <div data-include="./footer.html"></div>
+
+    <script src="../js/include.js"></script>
+    <script src="../js/carousel.js"></script> 
+  </body>
+</html>
