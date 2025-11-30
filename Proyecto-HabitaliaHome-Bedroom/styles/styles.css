@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
 /*Archivo de estilos globales, usados en todas las páginas*/
 :root {
   /* 🎨 PALETA PERSONALIZADA */
@@ -14,6 +16,10 @@
   --color-white: #ffffff;
   --color-border: #d9e4ea;
 
+  /* TIPOGRAFÍA (Variables nuevas) */
+  --fuente-titulos: 'Playfair Display', serif;
+  --fuente-cuerpo: 'Lato', sans-serif;
+
   /* Dropdown */
   --color-dropdown-bg: var(--color-principal);
 
@@ -23,16 +29,33 @@
 }
 
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box; 
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--fuente-cuerpo); 
   background-color: var(--color-neutro);
   color: var(--color-texto);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+/* Títulos (Playfair Display Bold) */
+h1, h2, h3 {
+  font-family: var(--fuente-titulos);
+  font-weight: 700; /* Bold */
+}
+
+/* Subtítulos o elementos específicos (Playfair Display Normal) */
+h4, h5, h6 {
+  font-family: var(--fuente-titulos);
+  font-weight: 400; /* Normal */
+}
+
+/* El cuerpo ya usa Lato por defecto gracias a la regla en 'body' */
+p, span, div {
+  font-family: var(--fuente-cuerpo);
 }
